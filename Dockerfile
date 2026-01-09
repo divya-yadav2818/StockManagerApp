@@ -5,7 +5,8 @@ FROM tomcat:9.0
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy WAR file as ROOT
-COPY deploy/StockManager.war /usr/local/tomcat/webapps/ROOT.war
+COPY StockManager.war /usr/local/tomcat/webapps/ROOT.war
+
 
 # Expose Tomcat port
 EXPOSE 8080
